@@ -1,0 +1,30 @@
+.mfaContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: mintcream;
+}
+
+.mfa {
+  display: flex;
+  justify-content: space-between;
+  /* width: 35%; */
+  padding: 30px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 15%; */
+}
+
+.codeBox {
+  width: 40%;
+}
+
+.laptopCodeBox {
+  width: 60%;
+}

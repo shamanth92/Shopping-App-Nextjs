@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  background-color: mintcream;
+}
+
+.loginContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login {
+  width: 35%;
+}
+
+.laptopLogin {
+  width: 50%;
+}
+
+.loginFields {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 25vh;
+}
+
+.laptopLoginFields {
+  @extend .loginFields;
+  height: 35vh;
+}
+
+.forgot {
+  margin-top: 15px;
+}
+
+.signUp {
+  display: flex;
+  justify-content: space-between;
+  width: 26%;
+  margin-top: 20px;
+}
+
+.laptopSignUp {
+  @extend .signUp;
+  width: 45%;
+}
+
+.image {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}

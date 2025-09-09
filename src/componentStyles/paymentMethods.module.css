@@ -1,0 +1,33 @@
+.paymentMethods {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.primaryPayment {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cardName {
+  display: flex;
+  width: 22%;
+  justify-content: space-between;
+}
+
+.cardDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionContainer {
+  float: right;
+  padding: 20px;
+  width: 25%;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}

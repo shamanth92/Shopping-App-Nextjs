@@ -1,0 +1,15 @@
+.orderHistory {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.orderDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+}

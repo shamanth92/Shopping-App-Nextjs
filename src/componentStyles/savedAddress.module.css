@@ -1,0 +1,13 @@
+.savedAddressContainer {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between;
+  flex-wrap: nowrap;
+  flex: 1 1 300px; */
+}
+
+.addressCards {
+  min-width: 25%;
+  padding: 15px;
+}

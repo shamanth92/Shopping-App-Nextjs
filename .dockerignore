@@ -1,0 +1,27 @@
+# Node modules & dependencies
+node_modules
+npm-debug.log
+yarn.lock
+.pnpm-debug.log
+
+# Next.js build output
+.next
+out
+
+# Logs
+logs
+*.log
+
+# Editor & OS files
+.vscode
+.idea
+.DS_Store
+*.swp
+
+# Git
+.git
+.gitignore
+
+# Docker-related
+Dockerfile
+.dockerignore

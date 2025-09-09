@@ -1,0 +1,41 @@
+ECommerce App:
+
+Frontend:
+React
+Next.js
+Zustand
+Material UI
+
+Backend:
+Mongodb
+C#
+
+Screens:
+Login with Authentication
+MFA Page?
+Main Products Page
+View Product Page
+Favorites Page
+Checkout Page
+Payment Page
+Account Page - Profile, Order History, Addresses, Payment Methods, Help(FAQS)
+Filter and Sort by Page?
+
+APIs required:
+GET Products - Public Free API
+Favorites API
+Login API (MFA?)
+Profile API
+Payment API - Stripe?
+Complete Order API
+Message Queue?
+Order History API
+
+Unit Testing:
+React Testing Library
+
+Additional Features:
+Chatbot/Chat?
+Live Product News?
+Browsing History?
+
