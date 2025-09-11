@@ -6,6 +6,7 @@ import {
 import { app } from "@/firebase/initialize";
 
 export async function GET(request: any): Promise<Response> {
+  console.log("FIREBASE_API_KEY:", process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
     const auth = getAuth(app);
     const { searchParams } = new URL(request.url);
     const email: any = searchParams.get('email');
