@@ -72,7 +72,7 @@ jobs:
       # 4. Build, tag, and push Docker image
       - name: Build and Push Docker image
         run: |
-          IMAGE_REPO_NAME=${{ secrets.AWS_ECR_REPO }}:frontend
+          IMAGE_REPO_NAME=${{ secrets.AWS_ECR_REPO }}-frontend
           IMAGE_TAG=${{ github.sha }}
 
           # Full ECR repo URI (from login step)
