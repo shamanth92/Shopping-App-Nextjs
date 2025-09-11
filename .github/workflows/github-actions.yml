@@ -70,12 +70,12 @@ jobs:
       # 4. Build, tag, and push Docker image
       - name: Build and Push Docker image
         run: |
-          IMAGE_REPO_NAME=${{ secrets.AWS_ECR_REPO }}-frontend
+          IMAGE_REPO_NAME=${{ secrets.AWS_ECR_REPO }}
           IMAGE_TAG=${{ github.sha }}
 
           # Full ECR repo URI (from login step)
           ECR_REGISTRY=${{ steps.login-ecr.outputs.registry }}
-          IMAGE_URI=$ECR_REGISTRY/$IMAGE_REPO_NAME:$IMAGE_TAG
+          IMAGE_URI=$ECR_REGISTRY/$IMAGE_REPO_NAME-frontend:$IMAGE_TAG
 
           echo "Building image: $IMAGE_URI"
 
@@ -83,7 +83,7 @@ jobs:
             --build-arg NEXT_PUBLIC_FIREBASE_CONFIG_KEY="$NEXT_PUBLIC_FIREBASE_CONFIG_KEY" \
             --build-arg API_URL="$API_URL" \
             -t $IMAGE_URI .
-            
+
           docker push $IMAGE_URI
 
           echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
