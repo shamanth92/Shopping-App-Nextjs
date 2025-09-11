@@ -5,10 +5,15 @@ WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 
 # Copy all files and build Next.js app
 COPY . .
+
+ARG NEXT_PUBLIC_FIREBASE_CONFIG_KEY
+ARG API_URL
+ENV NEXT_PUBLIC_FIREBASE_CONFIG_KEY=$NEXT_PUBLIC_FIREBASE_CONFIG_KEY
+ENV API_URL=$API_URL
 
 RUN npm run build
 

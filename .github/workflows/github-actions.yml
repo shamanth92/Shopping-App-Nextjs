@@ -4,11 +4,6 @@ on:
   push:
   pull_request:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   # eslint:
   #   runs-on: ubuntu-latest
@@ -84,7 +79,11 @@ jobs:
 
           echo "Building image: $IMAGE_URI"
 
-          docker build -t $IMAGE_URI .
+          docker build \
+            --build-arg NEXT_PUBLIC_FIREBASE_CONFIG_KEY="$NEXT_PUBLIC_FIREBASE_CONFIG_KEY" \
+            --build-arg API_URL="$API_URL" \
+            -t $IMAGE_URI .
+            
           docker push $IMAGE_URI
 
           echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
