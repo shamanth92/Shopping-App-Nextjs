@@ -25,3 +25,5 @@ logs
 # Docker-related
 Dockerfile
 .dockerignore
+
+.next/cache
