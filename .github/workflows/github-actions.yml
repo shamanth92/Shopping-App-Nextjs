@@ -32,6 +32,8 @@ jobs:
   test:
     needs: eslint
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_FIREBASE_CONFIG_KEY: ${{ secrets.NEXT_PUBLIC_FIREBASE_CONFIG_KEY }}
 
     steps:
       - name: Checkout repo
