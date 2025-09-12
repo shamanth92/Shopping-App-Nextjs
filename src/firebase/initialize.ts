@@ -8,4 +8,4 @@ import 'dotenv/config';
 const firebaseConfig: any = process.env.NEXT_PUBLIC_FIREBASE_CONFIG_KEY;
 
 // Initialize Firebase
-export const app = initializeApp(JSON.parse(firebaseConfig ?? ""));
+export const app = initializeApp(JSON.parse(firebaseConfig));
