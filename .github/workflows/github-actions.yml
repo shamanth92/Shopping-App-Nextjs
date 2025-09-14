@@ -81,5 +81,5 @@ jobs:
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repository: ${{ secrets.DEVOPS_REPO }}
-          event-type: test-dispatch
-          client-payload: '{"image":"shopping-app-frontend","tag":"${{ github.sha }}"}'
+          event-type: deploy-to-eks
+          client-payload: '{"image":"myprojects/shopping-app","tag":"${{ github.sha }}"}'
