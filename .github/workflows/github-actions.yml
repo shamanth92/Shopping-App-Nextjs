@@ -72,7 +72,7 @@ jobs:
 
           echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
 
-  dispatch:
+  trigger-devops-deployment:
     needs: build-and-push
     runs-on: ubuntu-latest
     steps:
